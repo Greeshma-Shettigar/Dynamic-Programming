@@ -8,7 +8,7 @@ public class Targetsum {
     for(int i=1;i<n+1;i++){
         for(int j=0;j<sum+1;j++){
             int v=num[i-1]; // Current element
-            if(j<=v&&dp[i-1][j-v]== true){
+            if(j>=v&&dp[i-1][j-v]== true){
                 dp[i][j]=true; // If current element can be included to achieve the sum{
                  
             }else if(dp[i-1][j]==true){
